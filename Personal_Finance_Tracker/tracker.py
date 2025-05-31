@@ -42,7 +42,10 @@ def view_summary():
     balance = total_income - total_expenses
     
     conn.close()
-    
+
     print(f"\nTotal Income: {total_income}")
     print(f"Total Expenses: {total_expenses}")
     print(f"Balance: {balance}")
+
+
+
