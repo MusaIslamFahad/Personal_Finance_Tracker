@@ -19,7 +19,7 @@ def track_savings_progress(balance):
     cursor.execute("SELECT goal_amount FROM savings_goal WHERE id = 1")
     goal_row = cursor.fetchone()
     conn.close()
-    
+
     if goal_row:
         goal_amount = goal_row[0]
         remaining = goal_amount - balance
@@ -29,3 +29,7 @@ def track_savings_progress(balance):
             print(f"Congratulations! You've reached your savings goal.")
     else:
         print("No savings goal set.")
+
+
+    
+    
