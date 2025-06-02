@@ -137,3 +137,5 @@ def visualize_data():
         histogram_expense_distribution()
     else:
         print("Invalid choice. Please select a valid option.")
+    
+    
